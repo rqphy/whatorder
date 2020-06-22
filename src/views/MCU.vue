@@ -1,13 +1,18 @@
 <template>
-  <Title text="whatorder" />
+  <div class="container">
+    <Title text="whatorder" />
+    <Illustration theme="mcu" />
+  </div>
 </template>
 <script>
 import Title from "@/components/Title.vue";
+import Illustration from "@/components/Illustration.vue";
 
 export default {
   name: "MCU",
   components: {
     Title,
+    Illustration,
   },
   data() {
     return {
