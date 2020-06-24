@@ -15,5 +15,6 @@ export default {
   font-size: var(--smallTitle);
   text-transform: uppercase;
   color: var(--mainDark);
+  margin-top: 32px;
 }
 </style>

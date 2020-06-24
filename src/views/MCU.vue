@@ -2,17 +2,20 @@
   <div class="container">
     <Title text="whatorder" />
     <Illustration theme="mcu" />
+    <Infos :watchTime="infos.time" :length="infos.movies.length" />
   </div>
 </template>
 <script>
 import Title from "@/components/Title.vue";
 import Illustration from "@/components/Illustration.vue";
+import Infos from "@/components/Infos.vue";
 
 export default {
   name: "MCU",
   components: {
     Title,
     Illustration,
+    Infos,
   },
   data() {
     return {
@@ -48,4 +51,10 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+</style>
