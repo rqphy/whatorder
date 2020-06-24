@@ -3,12 +3,14 @@
     <Title text="whatorder" />
     <Illustration theme="mcu" />
     <Infos :watchTime="infos.time" :length="infos.movies.length" />
+    <Movies :movies="infos.movies" />
   </div>
 </template>
 <script>
 import Title from "@/components/Title.vue";
 import Illustration from "@/components/Illustration.vue";
 import Infos from "@/components/Infos.vue";
+import Movies from "@/components/Movies.vue";
 
 export default {
   name: "MCU",
@@ -16,6 +18,7 @@ export default {
     Title,
     Illustration,
     Infos,
+    Movies,
   },
   data() {
     return {
