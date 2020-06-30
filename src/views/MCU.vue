@@ -1,10 +1,14 @@
 <template>
   <div class="container">
-    <Title text="whatorder" />
-    <Illustration theme="mcu" />
-    <Infos :watchTime="infos.time" :length="infos.movies.length" />
-    <Movies :movies="infos.movies" />
     <Burger v-if="openMenu" />
+    <Title v-if="!openMenu" text="whatorder" />
+    <Illustration v-if="!openMenu" theme="mcu" />
+    <Infos
+      v-if="!openMenu"
+      :watchTime="infos.time"
+      :length="infos.movies.length"
+    />
+    <Movies v-if="!openMenu" :movies="infos.movies" />
     <div class="burger" @click="updateOpenMenu">
       <div class="burger__background" v-if="!openMenu">
         <svg

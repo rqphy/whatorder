@@ -29,7 +29,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
 
   &__title,
   &__link {
