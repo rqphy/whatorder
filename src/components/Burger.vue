@@ -2,10 +2,18 @@
   <section class="menu">
     <Title text="whatorder" class="menu__title" />
     <ul class="menu__links">
-      <li class="menu__link">MCU</li>
-      <li class="menu__link">Fast&furious</li>
-      <li class="menu__link">XMens</li>
-      <li class="menu__link">Infos</li>
+      <li>
+        <a class="menu__link" href="/">MCU</a>
+      </li>
+      <li>
+        <a class="menu__link" href="/ff">Fast&furious</a>
+      </li>
+      <li>
+        <a class="menu__link" href="/xmens">XMens</a>
+      </li>
+      <li>
+        <a class="menu__link" href="/infos">Infos</a>
+      </li>
     </ul>
   </section>
 </template>

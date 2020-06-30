@@ -111,8 +111,7 @@ export default {
   width: 56px;
   position: fixed;
   z-index: 2;
-  border: 3px solid green;
-  bottom: 126px;
+  bottom: 70px;
   right: 5%;
 
   &__background {
