@@ -9,6 +9,7 @@
       :length="infos.movies.length"
     />
     <Movies v-if="!openMenu" :movies="infos.movies" />
+    <Gradient v-if="!openMenu" />
     <div class="burger" @click="updateOpenMenu">
       <div class="burger__background" v-if="!openMenu">
         <svg
@@ -49,6 +50,7 @@ import Illustration from "@/components/Illustration.vue";
 import Infos from "@/components/Infos.vue";
 import Movies from "@/components/Movies.vue";
 import Burger from "@/components/Burger.vue";
+import Gradient from "@/components/Gradient.vue";
 
 export default {
   name: "MCU",
@@ -58,6 +60,7 @@ export default {
     Infos,
     Movies,
     Burger,
+    Gradient,
   },
   data() {
     return {
