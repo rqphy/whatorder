@@ -1,5 +1,5 @@
 <template>
-  <div class="test"></div>
+  <div class="gradient"></div>
 </template>
 <script>
 export default {
@@ -7,7 +7,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.test {
+.gradient {
   height: 190px;
   width: 100%;
   position: fixed;
