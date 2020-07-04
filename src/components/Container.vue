@@ -2,7 +2,7 @@
   <div class="container">
     <Burger v-if="openMenu" />
     <Title v-if="!openMenu" text="whatorder" />
-    <Illustration v-if="!openMenu" theme="mcu" />
+    <Illustration v-if="!openMenu" :theme="theme" />
     <Infos
       v-if="!openMenu"
       :watchTime="infos.time"
@@ -67,6 +67,7 @@ export default {
   },
   props: {
     infos: Object,
+    theme: String,
   },
   data() {
     return {

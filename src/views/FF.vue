@@ -1,5 +1,5 @@
 <template>
-  <Container :infos="infos" />
+  <Container :infos="infos" theme="ff" />
 </template>
 <script>
 import Container from "@/components/Container.vue";
