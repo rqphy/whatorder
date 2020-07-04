@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       infos: {
-        time: "32 Hours",
+        time: "50 Hours",
         movies: [
           "Captain America: The First Avenger (2011)",
           "Captain Marvel (2019)",
