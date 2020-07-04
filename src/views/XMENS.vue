@@ -1,11 +1,11 @@
 <template>
-  <Container :infos="infos" theme="mcu" />
+  <Container :infos="infos" theme="xmens" />
 </template>
 <script>
 import Container from "@/components/Container.vue";
 
 export default {
-  name: "MCU",
+  name: "XMENS",
   components: {
     Container,
   },
