@@ -9,10 +9,10 @@ export default {
 <style lang="scss" scoped>
 .gradient {
   height: 190px;
-  width: 100%;
+  width: 120%;
   position: fixed;
-  bottom: -20px;
-  left: 0;
+  bottom: -50px;
+  left: -10%;
   background: rgb(245, 245, 245);
   background: linear-gradient(
     0deg,
