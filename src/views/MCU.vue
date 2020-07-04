@@ -42,6 +42,7 @@
         </svg>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 <script>
@@ -51,6 +52,7 @@ import Infos from "@/components/Infos.vue";
 import Movies from "@/components/Movies.vue";
 import Burger from "@/components/Burger.vue";
 import Gradient from "@/components/Gradient.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "MCU",
@@ -61,6 +63,7 @@ export default {
     Movies,
     Burger,
     Gradient,
+    Footer,
   },
   data() {
     return {
