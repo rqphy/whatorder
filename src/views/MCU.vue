@@ -1,5 +1,7 @@
 <template>
-  <Container :infos="infos" theme="mcu" />
+  <div class="page">
+    <Container :infos="infos" theme="mcu" class="template" />
+  </div>
 </template>
 <script>
 import Container from "@/components/Container.vue";
@@ -48,4 +50,13 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.template {
+  max-width: 1920px;
+}
+</style>
