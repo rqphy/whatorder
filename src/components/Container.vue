@@ -9,7 +9,7 @@
       :length="infos.movies.length"
     />
     <Movies v-if="!openMenu" :movies="infos.movies" />
-    <Gradient v-if="!openMenu" />
+    <Gradient v-if="!openMenu" class="smallgradient" />
     <div class="burger" @click="updateOpenMenu">
       <div class="burger__background" v-if="!openMenu">
         <svg
@@ -82,6 +82,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "../css/mixins.scss";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -107,6 +109,13 @@ export default {
   }
   &__icon {
     transform: translate(50%, 50%);
+  }
+}
+
+.burger,
+.smallgradient {
+  @include large {
+    display: none;
   }
 }
 </style>
