@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Burger v-if="openMenu" />
+    <Burger v-if="openMenu" :pages="pages" />
     <Title v-if="!openMenu" text="whatorder" />
     <Header :pages="pages" />
     <Illustration v-if="!openMenu" :theme="theme" />
