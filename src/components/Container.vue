@@ -2,6 +2,7 @@
   <div class="container">
     <Burger v-if="openMenu" />
     <Title v-if="!openMenu" text="whatorder" />
+    <Header />
     <Illustration v-if="!openMenu" :theme="theme" />
     <Infos
       v-if="!openMenu"
@@ -53,6 +54,7 @@ import Movies from "@/components/Movies.vue";
 import Burger from "@/components/Burger.vue";
 import Gradient from "@/components/Gradient.vue";
 import Footer from "@/components/Footer.vue";
+import Header from "@/components/Header.vue";
 
 export default {
   name: "Container",
@@ -64,6 +66,7 @@ export default {
     Burger,
     Gradient,
     Footer,
+    Header,
   },
   props: {
     infos: Object,
