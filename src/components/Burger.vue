@@ -2,17 +2,8 @@
   <section class="menu">
     <Title text="whatorder" class="menu__title" />
     <ul class="menu__links">
-      <li>
-        <a class="menu__link" href="/">MCU</a>
-      </li>
-      <li>
-        <a class="menu__link" href="/ff">Fast&furious</a>
-      </li>
-      <li>
-        <a class="menu__link" href="/xmens">XMens</a>
-      </li>
-      <li>
-        <a class="menu__link" href="/infos">Infos</a>
+      <li v-for="page in pages" :key="page">
+        <a :href="page.path" class="menu__link"> {{ page.name }}</a>
       </li>
     </ul>
   </section>
@@ -24,6 +15,9 @@ export default {
   name: "Burger",
   components: {
     Title,
+  },
+  props: {
+    pages: Array,
   },
 };
 </script>

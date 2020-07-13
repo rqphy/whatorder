@@ -1,5 +1,7 @@
 <template>
-  <Container :infos="infos" theme="mcu" />
+  <div class="page">
+    <Container :infos="infos" :pages="pages" theme="mcu" class="template" />
+  </div>
 </template>
 <script>
 import Container from "@/components/Container.vue";
@@ -8,6 +10,9 @@ export default {
   name: "MCU",
   components: {
     Container,
+  },
+  props: {
+    pages: Array,
   },
   data() {
     return {
@@ -48,4 +53,13 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.template {
+  max-width: 1920px;
+}
+</style>

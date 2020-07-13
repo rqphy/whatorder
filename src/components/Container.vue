@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-    <Burger v-if="openMenu" />
+    <Burger v-if="openMenu" :pages="pages" />
     <Title v-if="!openMenu" text="whatorder" />
+    <Header :pages="pages" />
     <Illustration v-if="!openMenu" :theme="theme" />
     <Infos
       v-if="!openMenu"
@@ -9,7 +10,7 @@
       :length="infos.movies.length"
     />
     <Movies v-if="!openMenu" :movies="infos.movies" />
-    <Gradient v-if="!openMenu" />
+    <Gradient v-if="!openMenu" class="smallgradient" />
     <div class="burger" @click="updateOpenMenu">
       <div class="burger__background" v-if="!openMenu">
         <svg
@@ -53,6 +54,7 @@ import Movies from "@/components/Movies.vue";
 import Burger from "@/components/Burger.vue";
 import Gradient from "@/components/Gradient.vue";
 import Footer from "@/components/Footer.vue";
+import Header from "@/components/Header.vue";
 
 export default {
   name: "Container",
@@ -64,10 +66,12 @@ export default {
     Burger,
     Gradient,
     Footer,
+    Header,
   },
   props: {
     infos: Object,
     theme: String,
+    pages: Array,
   },
   data() {
     return {
@@ -82,6 +86,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "../css/mixins.scss";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -107,6 +113,13 @@ export default {
   }
   &__icon {
     transform: translate(50%, 50%);
+  }
+}
+
+.burger,
+.smallgradient {
+  @include large {
+    display: none;
   }
 }
 </style>
