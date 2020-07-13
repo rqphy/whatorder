@@ -1,13 +1,30 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view :pages="pagesInfos" />
   </div>
 </template>
 
 <script>
 export default {
   name: "App",
-  components: {},
+  data() {
+    return {
+      pagesInfos: [
+        {
+          name: "MCU",
+          path: "/",
+        },
+        {
+          name: "Fast&Furious",
+          path: "ff",
+        },
+        {
+          name: "XMens",
+          path: "xmens",
+        },
+      ],
+    };
+  },
 };
 </script>
 

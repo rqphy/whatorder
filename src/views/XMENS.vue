@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Container :infos="infos" theme="xmens" />
+    <Container :infos="infos" theme="xmens" :pages="pages" />
   </div>
 </template>
 <script>
@@ -10,6 +10,9 @@ export default {
   name: "XMENS",
   components: {
     Container,
+  },
+  props: {
+    pages: Array,
   },
   data() {
     return {

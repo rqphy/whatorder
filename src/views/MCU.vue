@@ -1,6 +1,6 @@
 <template>
   <div class="page">
-    <Container :infos="infos" theme="mcu" class="template" />
+    <Container :infos="infos" :pages="pages" theme="mcu" class="template" />
   </div>
 </template>
 <script>
@@ -10,6 +10,9 @@ export default {
   name: "MCU",
   components: {
     Container,
+  },
+  props: {
+    pages: Array,
   },
   data() {
     return {

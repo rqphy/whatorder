@@ -1,17 +1,8 @@
 <template>
   <header class="nav">
     <ul class="nav__links">
-      <li>
-        <a class="nav__link" href="/">MCU</a>
-      </li>
-      <li>
-        <a class="nav__link" href="/ff">Fast&furious</a>
-      </li>
-      <li>
-        <a class="nav__link" href="/xmens">XMens</a>
-      </li>
-      <li>
-        <a class="nav__link" href="/infos">Infos</a>
+      <li v-for="page in pages" :key="page">
+        <a :href="page.path" class="nav__link"> {{ page.name }}</a>
       </li>
     </ul>
   </header>
@@ -19,6 +10,9 @@
 <script>
 export default {
   name: "Header",
+  props: {
+    pages: Array,
+  },
 };
 </script>
 <style lang="scss" scoped>
