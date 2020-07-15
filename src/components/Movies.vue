@@ -34,6 +34,7 @@ export default {
     background-color: var(--mainDark);
     color: var(--mainWhite);
     font-family: var(--font);
+    font-weight: 600;
     font-size: 14px;
     line-height: 40px;
     letter-spacing: 0.5px;

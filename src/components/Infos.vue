@@ -17,6 +17,7 @@ export default {
 .infos {
   width: 80%;
   font-family: var(--font);
+  font-weight: 600;
   color: var(--mainDark);
   font-size: 16px;
   display: flex;

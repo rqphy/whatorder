@@ -25,6 +25,7 @@ export default {
   &__link {
     margin: 10px;
     font-family: var(--font);
+    font-weight: 600;
     color: var(--mainDark);
   }
 }
