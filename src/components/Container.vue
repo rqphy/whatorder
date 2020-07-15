@@ -94,6 +94,13 @@ export default {
   align-items: center;
 }
 
+.nav {
+  display: none;
+  @include large {
+    display: block;
+  }
+}
+
 .burger {
   height: 56px;
   width: 56px;
