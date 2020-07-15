@@ -11,7 +11,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .title {
-  font-family: var(--font);
+  font-family: var(--titleFont);
   font-size: var(--smallTitle);
   text-transform: uppercase;
   color: var(--mainDark);
